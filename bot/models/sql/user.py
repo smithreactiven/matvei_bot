@@ -9,5 +9,7 @@ class User(Base):
 
     index = Column(Integer, primary_key=True)
     id = Column(BigInteger)
-    full_name = Column(String)
-    created_at = Column(DateTime, default=datetime.now())
+    username = Column(String, default=None)
+    first_name = Column(String)
+    last_name = Column(String)
+

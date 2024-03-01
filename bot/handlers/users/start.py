@@ -5,10 +5,11 @@ import tools
 
 
 async def start_handler(message: types.Message):
+    name = message.from_user.first_name
     msg_text = await tools.filer.read_txt("start")
     await message.answer(
-        text=msg_text,
-        reply_markup=keyboards.inline.register.keyboard.as_markup()
+        text=msg_text.format(name),
+        reply_markup=None
     )
 
 
