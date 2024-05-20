@@ -10,6 +10,7 @@ from sqlalchemy import select
 
 
 async def broadcast_start_handler(callback: types.CallbackQuery, state: FSMContext):
+    await state.clear()
     await callback.answer()
     await callback.message.answer(
         "[1/2] Пришлите мне сообщение:"

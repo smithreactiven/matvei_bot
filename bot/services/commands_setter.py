@@ -14,7 +14,8 @@ async def set_bot_commands(bot: Bot):
         await bot.set_my_commands(
             [
                 BotCommand(command="start", description="Start bot"),
-                BotCommand(command="admin", description="Админ")
+                BotCommand(command="admin", description="Админ"),
+                BotCommand(command="export", description="Экспорт")
             ],
             scope=BotCommandScopeChat(chat_id=admin_id)
         )

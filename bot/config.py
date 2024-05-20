@@ -16,3 +16,19 @@ PSQL_DB_NAME = env.str("PSQL_DB_NAME")
 
 DIRNAME = os.path.dirname(__file__)
 os.chdir(f"{DIRNAME}//..")
+
+one_model = dict(
+    type='Первое'
+)
+two_model = dict(
+    type='Второе'
+)
+three_model = dict(
+    type='Третье'
+)
+
+MESSAGE_MODEL = dict(
+    change_first=one_model,
+    change_second=two_model,
+    change_third=three_model
+)
