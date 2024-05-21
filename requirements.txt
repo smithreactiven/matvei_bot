@@ -4,3 +4,4 @@ psycopg2>=2.9.3
 SQLAlchemy>=1.4.36
 asyncpg>=0.25.0
 cachetools>=5.3.2
+openpyxl==3.1.2
