@@ -26,9 +26,13 @@ two_model = dict(
 three_model = dict(
     type='Третье'
 )
+forty_model = dict(
+    type='Четвертое'
+)
 
 MESSAGE_MODEL = dict(
     change_first=one_model,
     change_second=two_model,
-    change_third=three_model
+    change_third=three_model,
+    change_forty=forty_model
 )
