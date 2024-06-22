@@ -44,6 +44,13 @@ async def edit_message_handler(message: types.Message, state: FSMContext, sessio
             update_message.third_message = new_message
             await open_session.commit()
             await message.answer('Третье сообщение успешно обновлено')
+        if message_type == 'Четвертое':
+            new_message = message.text
+            result = await open_session.execute(select(models.sql.Message))
+            update_message = result.scalars().first()
+            update_message.forty_message = new_message
+            await open_session.commit()
+            await message.answer('Четвертое сообщение успешно обновлено')
 
 
 def setup(dp: Dispatcher):

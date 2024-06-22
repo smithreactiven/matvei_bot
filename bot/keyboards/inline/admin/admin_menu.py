@@ -17,7 +17,12 @@ btn_change_third = InlineKeyboardButton(
     text="Поменять третье сообщение",
     callback_data="change_third"
 )
+btn_change_fourth = InlineKeyboardButton(
+    text="Поменять четвертое сообщение",
+    callback_data="change_forty"
+)
 keyboard.row(btn_sender)
 keyboard.row(btn_change_first)
 keyboard.row(btn_change_second)
 keyboard.row(btn_change_third)
+keyboard.row(btn_change_fourth)

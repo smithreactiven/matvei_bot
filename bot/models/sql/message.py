@@ -11,3 +11,4 @@ class Message(Base):
     first_message = Column(String)
     second_message = Column(String)
     third_message = Column(String)
+    forty_message = Column(String)
