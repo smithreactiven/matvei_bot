@@ -9,6 +9,7 @@ from bot import models, config, states
 
 
 async def admin_menu_handler(message: Message, state: FSMContext, session):
+    await state.clear()
     async with session() as open_session:
         users: typing.List[int] = await open_session.execute(select(models.sql.User.id))
         users_id = users.scalars().all()
